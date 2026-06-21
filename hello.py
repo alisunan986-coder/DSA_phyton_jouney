@@ -1,5 +1,7 @@
 my_string ="hello world!"
 print(my_string)
+
+
 numbers = range(0, 10)  # Numbers from 0 to 9
 print(tuple(numbers))
 user = {"name": "Bob", "age": 30, "is_admin": True}
@@ -38,6 +40,7 @@ number2 = float(num2_str)
 sum_result = number1 + number2
 product_result = number1 * number2
 print("Sum:", sum_result)
+print("difference:", number1 - number2)
 print("Product:", product_result)
 
 #f-strings(formatted strings)
@@ -61,3 +64,30 @@ print(f"The total area of the triangle is: {area}")
 
 # Bonus: Formatting decimals to 2 decimal places using :.2f
 print(f"Formatted Area: {area:.2f}")
+#day 4 if-else
+is_raining = True
+
+if is_raining:
+    print("Take an umbrella!")
+
+    score = 85
+if score >= 90:
+    print("Grade: A")
+elif score >= 80:
+    print("Grade: B")
+elif score >= 70:
+    print("Grade: C")
+else:
+    print("Grade: F")
+
+    #another example
+    number = 150
+
+if number == 0:
+    print(f"the number {number} belongs to the category: ZERO")
+elif number > 100:
+    print(f"the number {number} belongs to the category: LARGE")
+elif number > 0:
+    print(f"the number {number} belongs to the category: POSITIVE")
+else:
+    print(f"The number {number} belongs to the category: NEGATIVE NUMBER.")
